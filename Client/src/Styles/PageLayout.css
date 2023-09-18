@@ -1,0 +1,45 @@
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.nav a:hover{
+  color: rgb(241, 64, 64);
+}
+
+.nav nav .active,
+.nav .active{
+  color: rgb(241, 64, 64);
+}
+
+header{
+    margin-top: 20px;
+    
+}
+
+
+.logo{
+    position: relative;
+    font-family: 'Monoton', Courier;
+    font-weight: bolder;
+    color: black;
+    font-size: 30px;
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-size: 20px;
+    z-index: 999;
+}
+
+
+.nav nav a{
+    padding: 1rem;
+    color: #282828;
+}
+
+

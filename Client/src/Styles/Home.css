@@ -1,0 +1,183 @@
+/*      Opening Banner     */
+.sliderimg{
+    width: 100%;
+    height: 500px;
+    object-fit: cover
+  }
+
+  .carousel-element{
+    position: relative;
+  }
+
+.img-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 10px;
+  }
+
+.img-container img{
+    position: relative;
+    height: 60vh;
+    width: 50%;
+    top: -200px;
+  }
+
+.img-container .detail{
+    position: relative;
+    padding: 150px 0px;
+    top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    left: 7%;
+
+}
+
+.img-container .detail h2{
+  position: relative;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: rgb(241, 64, 64);
+  z-index: 99;
+  right: 25%;
+  top: 55%;
+  background-color: white;
+}
+
+.img-container .detail p{
+  position: relative;
+  font-size: 17px;
+  z-index: 99;
+  right: 25%;
+  top: 55%;
+  background-color: white;
+}
+
+.img-container .detail span{
+  background-color: white;
+  color: rgb(241, 64, 64);
+}
+
+
+.img-container .detail button{
+  position: relative;
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 0px;
+  cursor: pointer;
+  border-color:black;
+  z-index: 99;
+  right: 25%;
+  top: 55%;
+}
+
+.img-container .detail button:hover{
+  color: white;
+  background-color: rgb(241, 64, 64);
+  border-color:rgb(241, 64, 64);
+}
+
+/* Features */
+.section-feature{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 75px 50px;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.section-feature .fe-box {
+  width: 180px;
+  text-align: center;
+  box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+}
+
+.section-feature .fe-box:hover{
+  box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+  -webkit-transform: scale(1.15);
+  z-index: 1;
+}
+
+.section-feature .fe-box img{
+  width: 80%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.section-feature .fe-box h6 {
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: black;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.section-feature .fe-box h6{
+  background-color: rgb(165, 227, 220);
+}
+
+/*  Featured Products */
+.feamobile{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.product-container{
+    margin: 30px 20px 30px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.single-product{
+    width: 30%;
+}
+
+.single-product img{
+    height: 250px;
+    width: 250px;
+}
+
+.single-product p{
+  color: rgb(241, 64, 64);
+  font-weight: bolder;
+}
+
+.single-product p,
+.single-product h3{
+    position: relative;
+    text-align: center;
+    margin-top: 18px;
+    right: 70px;
+
+}
+
+/* Banner */
+.banner {
+  background-image: url("../Images/Mobile Devices/Apple/15.jpeg");
+  background-size: cover;
+  height: 80vh;
+  margin: 30px 0px;
+  z-index: -111;
+}
+
+.banner div {
+  position: relative;
+  top: 40px;
+}
+
+
+
+
