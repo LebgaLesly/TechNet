@@ -1,45 +1,51 @@
-a{
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  background-color: inherit;
 }
 
-.nav a:hover{
-  color: rgb(241, 64, 64);
+.nav a:hover {
+  color: #ffcb74;
 }
 
 .nav nav .active,
-.nav .active{
-  color: rgb(241, 64, 64);
+.nav .active {
+  color: #ffcb74;
 }
 
-header{
-    margin-top: 20px;
-    
+header {
+  position: sticky;
+  top: 0;
+  padding: 3px 0;
+  background-color: #2f2f2f;
+  z-index: 99999;
 }
 
-
-.logo{
-    position: relative;
-    font-family: 'Monoton', Courier;
-    font-weight: bolder;
-    color: black;
-    font-size: 30px;
+.logo {
+  position: relative;
+  font-family: 'Monoton', Courier;
+  font-weight: bolder;
+  color: white;
+  font-size: 30px;
+  background-color: inherit;
 }
 
-.nav{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    font-size: 20px;
-    z-index: 999;
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  font-size: 20px;
+  background-color: inherit;
 }
 
-
-.nav nav a{
-    padding: 1rem;
-    color: #282828;
+.nav nav a {
+  padding: 1rem;
+  color: white;
 }
 
-
+nav,
+.link {
+    background-color: inherit;
+}

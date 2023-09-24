@@ -1,40 +1,39 @@
-import { Outlet , NavLink,Link } from "react-router-dom";
-import { FaRegHeart, FaRegUser, FaShoppingCart } from "react-icons/fa";
-import "../Styles/PageLayout.css";
-
-
-
-
+import { Outlet, NavLink, Link } from 'react-router-dom';
+import { FaRegHeart, FaRegUser, FaOpencart } from 'react-icons/fa';
+import '../Styles/PageLayout.css';
 
 const PageLayout = () => {
-    return(
-        <>
-            <header>
-                <nav className="nav">
-                    <Link className="logo">TECH NET</Link>
-                    <nav>
-                        <NavLink index >Home</NavLink>
-                        <NavLink to="product">Products</NavLink>
-                        <NavLink to="articles">Blog</NavLink>
-                        <NavLink to="about">About</NavLink>
-                        <NavLink to="contact">Contact</NavLink>
-                        <Link><FaShoppingCart /></Link>
-                        <Link><FaRegHeart /></Link>
-                        <Link><FaRegUser /></Link>
-                    </nav>
-                    
-                </nav>
-        </header>
+  return (
+    <>
+      <header>
+        <nav className="nav">
+          <Link className="logo">TECH NET</Link>
+          <nav>
+            <NavLink index  className='link'>Home</NavLink>
+            <NavLink to="product"  className='link'>Products</NavLink>
+            <NavLink to="articles"  className='link'>Blog</NavLink>
+            <NavLink to="about"  className='link'>About</NavLink>
+            <NavLink to="contact"  className='link'>Contact</NavLink>
+            <Link  className='link'>
+              <FaOpencart className='link'/>
+            </Link>
+            <Link  className='link'>
+              <FaRegHeart className='link'/>
+            </Link>
+            <Link  className='link'>
+              <FaRegUser className='link' />
+            </Link>
+          </nav>
+        </nav>
+      </header>
 
-        <main>
-            <Outlet />
-        </main>
+      <main>
+        <Outlet />
+      </main>
 
-        <footer>
-
-        </footer>
-        </>
-    )
-}
+      <footer></footer>
+    </>
+  );
+};
 
 export default PageLayout;
