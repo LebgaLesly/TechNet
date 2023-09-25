@@ -1,0 +1,57 @@
+/*  Head Banner   */
+.head-banner {
+  margin-top: 40px;
+  margin-bottom: 90px;
+  padding: 100px 0;
+  background-image: url('../Images/Banner/16.avif');
+  background-size: cover;
+}
+
+.head-banner h1 {
+  mix-blend-mode: multiply;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
+.products {
+  display: flex;
+  overflow: hidden;
+}
+
+.products .sidebar {
+  width: 35%;
+  text-align: center;
+  background-color: #2f2f2f;
+  margin-left: 19px;
+  height: 450px;
+  margin-top: 100px;
+}
+
+.sidebar h1 {
+  margin-top: 100px;
+  margin-bottom: 0px;
+  position: relative;
+  background-color: inherit;
+  color: #ffcb74;
+}
+.sidebar aside {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+  background-color: inherit;
+  font-size: 17px;
+}
+
+.sidebar aside a{
+    color: whitesmoke;
+}
+
+aside a:hover{
+    color: #ffcb74;
+}
+
+aside a.active{
+    color: #ffcb74;
+}
