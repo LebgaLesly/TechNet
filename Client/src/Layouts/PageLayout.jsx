@@ -2,6 +2,9 @@ import { Outlet, NavLink, Link } from 'react-router-dom';
 import { FaRegHeart, FaRegUser, FaOpencart } from 'react-icons/fa';
 import '../Styles/PageLayout.css';
 
+/*   Components */
+import Footer from '../Home components/Footer';
+
 const PageLayout = () => {
   return (
     <>
@@ -31,7 +34,9 @@ const PageLayout = () => {
         <Outlet />
       </main>
 
-      <footer></footer>
+      <footer>
+      <Footer />
+      </footer>
     </>
   );
 };

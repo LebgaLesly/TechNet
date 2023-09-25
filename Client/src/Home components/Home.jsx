@@ -11,6 +11,8 @@ import image3 from '../Images/TV/Samsung/banner2.jpg';
 //Componets import
 import FeaturedProduct from './Featured Product';
 import Feature from './Features';
+import Testimonials from './Testimonials';
+import FootBanner from './Foot Banner';
 
 const settings = {
   showArrows: false,
@@ -85,7 +87,11 @@ const Home = () => {
       </div>
       <Feature />
       <FeaturedProduct />
+      <Testimonials />
+      <FootBanner />
+     
     </>
+
   );
 };
 

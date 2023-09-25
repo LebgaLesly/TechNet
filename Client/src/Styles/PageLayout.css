@@ -6,7 +6,7 @@ a {
 }
 
 .nav a:hover {
-  color: #ffcb74;
+  color: rgb(215, 127, 11);
 }
 
 .nav nav .active,
@@ -26,7 +26,7 @@ header {
   position: relative;
   font-family: 'Monoton', Courier;
   font-weight: bolder;
-  color: white;
+  color: #ffcb74;
   font-size: 30px;
   background-color: inherit;
 }
