@@ -4,6 +4,8 @@ import { Outlet, Link } from 'react-router-dom';
 
 // Components imports
 import HeadBanner from './Head Banner';
+import AccessoryProducts from './Accessory Products';
+import FootBanner from '../Home components/Foot Banner';
 
 const Product = () => {
   return (
@@ -35,6 +37,13 @@ const Product = () => {
           <Outlet />
         </div>
       </div>
+      <section className='product-banner'>
+            <h1>Exclusive <span>Offer</span> </h1>
+            <p>Get up to <span>40%</span> Discount on deals</p>
+            <button>Shop Now</button>
+        </section>
+        <AccessoryProducts />
+        <FootBanner/>
     </>
   );
 };

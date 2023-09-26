@@ -55,3 +55,58 @@ aside a:hover{
 aside a.active{
     color: #ffcb74;
 }
+
+
+/* Banner  */
+.product-banner{
+    background-image: url('../Images/Banner/6.webp');
+    padding: 180px 0px;
+    background-size: cover;
+    margin: 60px 0px;
+    background-position: center right;
+    overflow: hidden;
+}
+
+.product-banner h1,
+.product-banner p,
+.product-banner button{
+    mix-blend-mode: multiply;
+    text-align: center;
+}
+
+.product-banner h1{
+    font-size: 50px;
+    position: relative;
+    left: 450px;
+    bottom: 50px;
+}
+
+.product-banner p{
+    font-size: 25px;
+    position: relative;
+    left: 450px;
+    bottom: 35px;
+}
+
+.product-banner  span{
+    color:rgb(253, 56, 7);
+}
+
+.product-banner button {
+    position: relative;
+    margin-left: 66em;
+    bottom: 28px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(253, 56, 7);
+    border-color: white;
+  }
+  
+  .product-banner button:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+  }
