@@ -170,6 +170,7 @@
 .single-product {
   width: 30%;
   margin-bottom: 40px;
+
 }
 
 .single-product:hover {
@@ -331,7 +332,7 @@
   height: 410px;
   box-shadow: 10px 10px 14px #4d4a4a;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .single-test:hover{

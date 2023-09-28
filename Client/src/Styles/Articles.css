@@ -1,0 +1,62 @@
+.blog-banner{
+    margin: 40px 0px;
+    padding: 110px 0px;
+    background-color: rgb(233, 226, 211);
+    background-image: url('../Images/Banner/b19.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 80%;
+    background-blend-mode:multiply;
+    text-align: center;
+}
+
+.blog-banner h1,
+.blog-banner p{
+    mix-blend-mode: multiply;
+}
+
+.blog-banner h1{
+    position: relative;
+    font-size: 50px;
+    font-weight: 900;
+    color:#f76b00;
+}
+
+.blog-banner p{
+    position: relative;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+.blog{
+    margin: 40px 30px;
+}
+
+.blog h1{
+    margin: 40px 0px;
+}
+
+.single-blog{
+    display: flex;
+    margin-bottom: 60px;
+    gap: 20px;
+}
+
+.single-blog img{
+    width: 600px;
+    height: 400px;
+}
+
+
+.single-blog div .author{
+    position: relative;
+    bottom: 30px;
+    color: #f76b00;
+}
+
+.single-blog div .des{
+    position: relative;
+    bottom: 25px;
+    font-size: 18px;
+}
