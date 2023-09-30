@@ -14,10 +14,10 @@ import Product from './Product components/Product';
 import Articles from './Articles components/Articles';
 import About from './About components/About';
 import Contact from './Contact components/Contact';
-import ApplePhone from './Product components/Sub-FP/ApplePhone'
-import SamsungPhone from './Product components/Sub-FP/SamsungPhone'
-import HisenseTv from './Product components/Sub-FP/HisenseTv' 
-import SamsungTv from './Product components/Sub-FP/SamsungTv'
+import ApplePhone from './Product components/Sub-FP/ApplePhone';
+import SamsungPhone from './Product components/Sub-FP/SamsungPhone';
+import HisenseTv from './Product components/Sub-FP/HisenseTv';
+import SamsungTv from './Product components/Sub-FP/SamsungTv';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

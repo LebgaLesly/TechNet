@@ -4,14 +4,12 @@
     margin: 40px 0px;
     text-align: center;
     background-position: right center;
-    background-color: white;
-    background-blend-mode:multiply;
 }
 
 .about-banner h1{
     mix-blend-mode: multiply;
     font-size: 65px;
-    color: red;
+    color: #f7af34;
 }
 
 #about-head{
