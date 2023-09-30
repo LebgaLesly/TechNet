@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import '../Styles/Home.css';
+import '../../Styles/Home.css';
 
 const FootBanner = () => {
   return (

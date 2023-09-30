@@ -1,12 +1,12 @@
-import '../../Styles/Home.css';
+import '../../../Styles/Home.css';
 import { FaShoppingBag, FaHeart, FaStar, FaRegStar } from 'react-icons/fa';
-import HisenseTvData from '../Product Data.jsx/Hisense Tv Data';
+import ApplePhoneData from '../Product Data.jsx/Apple Phone Data';
 
-const HisenseTv = () => {
+const ApplePhone = () => {
   return (
     <>
       <div className="product-container">
-        {HisenseTvData.products.map((product) => {
+        {ApplePhoneData.products.map((product) => {
           return (
             <>
               <div className="single-product">
@@ -37,4 +37,4 @@ const HisenseTv = () => {
   );
 };
 
-export default HisenseTv;
+export default ApplePhone;

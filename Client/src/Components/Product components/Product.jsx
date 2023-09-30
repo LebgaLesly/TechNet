@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import '../Styles/Product.css';
+import '../../Styles/Product.css';
 import { Outlet, Link } from 'react-router-dom';
 
 // Components imports
@@ -16,7 +16,9 @@ const Product = () => {
       </a>
       <div className="products">
         <div className="sidebar">
-            <a href=""><h1 className="feamobile">Catergories</h1></a>
+          <a href="">
+            <h1 className="feamobile">Catergories</h1>
+          </a>
           <aside>
             <Link index className="Link">
               Apple Phone
@@ -37,13 +39,17 @@ const Product = () => {
           <Outlet />
         </div>
       </div>
-      <section className='product-banner'>
-            <h1>Exclusive <span>Offer</span> </h1>
-            <p>Get up to <span>40%</span> Discount on deals</p>
-            <button>Shop Now</button>
-        </section>
-        <AccessoryProducts />
-        <FootBanner/>
+      <section className="product-banner">
+        <h1>
+          Exclusive <span>Offer</span>{' '}
+        </h1>
+        <p>
+          Get up to <span>40%</span> Discount on deals
+        </p>
+        <button>Shop Now</button>
+      </section>
+      <AccessoryProducts />
+      <FootBanner />
     </>
   );
 };

@@ -1,12 +1,12 @@
-import '../../Styles/Home.css';
+import '../../../Styles/Home.css';
 import { FaShoppingBag, FaHeart, FaStar, FaRegStar } from 'react-icons/fa';
-import SamsungTvData from '../Product Data.jsx/Samsung Phone Data';
+import HisenseTvData from '../Product Data.jsx/Hisense Tv Data';
 
-const SamsungTv = () => {
+const HisenseTv = () => {
   return (
     <>
       <div className="product-container">
-        {SamsungTvData.products.map((product) => {
+        {HisenseTvData.products.map((product) => {
           return (
             <>
               <div className="single-product">
@@ -37,4 +37,4 @@ const SamsungTv = () => {
   );
 };
 
-export default SamsungTv;
+export default HisenseTv;

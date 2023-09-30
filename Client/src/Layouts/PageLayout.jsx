@@ -3,7 +3,7 @@ import { FaRegHeart, FaRegUser, FaOpencart } from 'react-icons/fa';
 import '../Styles/PageLayout.css';
 
 /*   Components */
-import Footer from '../Home components/Footer';
+import Footer from '../Components/Home components/Footer';
 
 const PageLayout = () => {
   return (
@@ -12,19 +12,29 @@ const PageLayout = () => {
         <nav className="nav">
           <Link className="logo">TECH NET</Link>
           <nav>
-            <NavLink index  className='link'>Home</NavLink>
-            <NavLink to="product"  className='link'>Products</NavLink>
-            <NavLink to="articles"  className='link'>Blog</NavLink>
-            <NavLink to="about"  className='link'>About</NavLink>
-            <NavLink to="contact"  className='link'>Contact</NavLink>
-            <Link  className='link'>
-              <FaOpencart className='link'/>
+            <NavLink index className="link">
+              Home
+            </NavLink>
+            <NavLink to="product" className="link">
+              Products
+            </NavLink>
+            <NavLink to="articles" className="link">
+              Blog
+            </NavLink>
+            <NavLink to="about" className="link">
+              About
+            </NavLink>
+            <NavLink to="contact" className="link">
+              Contact
+            </NavLink>
+            <Link className="link">
+              <FaOpencart className="link" />
             </Link>
-            <Link  className='link'>
-              <FaRegHeart className='link'/>
+            <Link className="link">
+              <FaRegHeart className="link" />
             </Link>
-            <Link  className='link'>
-              <FaRegUser className='link' />
+            <Link className="link">
+              <FaRegUser className="link" />
             </Link>
           </nav>
         </nav>
@@ -35,7 +45,7 @@ const PageLayout = () => {
       </main>
 
       <footer>
-      <Footer />
+        <Footer />
       </footer>
     </>
   );

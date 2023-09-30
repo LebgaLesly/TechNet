@@ -1,20 +1,16 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import '../Styles/Home.css';
+import '../../../Styles/Home.css';
 import { FaShoppingBag, FaHeart, FaStar, FaRegStar } from 'react-icons/fa';
-import AccessoryProductData from './Product Data.jsx/Accessory Product Data';
+import SamsungTvData from '../Product Data.jsx/Samsung Phone Data';
 
-const AccessoryProducts = () => {
+const SamsungTv = () => {
   return (
     <>
-      <section>
-        <a href="#">
-          <h2 className="feamobile2">Accessory Products</h2>
-        </a>
-        <div className="product-container">
-        {AccessoryProductData.products.map((product) => {
-        return (
+      <div className="product-container">
+        {SamsungTvData.products.map((product) => {
+          return (
+            <>
               <div className="single-product">
-                 <img src={product.image} alt="" />
+                <img src={product.image} alt="" />
                 <div className="details">
                   <div className="details-all">
                     <p>{product.name}</p>
@@ -33,12 +29,12 @@ const AccessoryProducts = () => {
                   </div>
                 </div>
               </div>
-        );
-      })}
+            </>
+          );
+        })}
       </div>
-      </section>
     </>
   );
 };
 
-export default AccessoryProducts;
+export default SamsungTv;

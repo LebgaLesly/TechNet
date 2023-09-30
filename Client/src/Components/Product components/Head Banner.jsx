@@ -1,4 +1,4 @@
-import '../Styles/Product.css';
+import '../../Styles/Product.css';
 import { FaSearch } from 'react-icons/fa';
 
 const HeadBanner = () => {

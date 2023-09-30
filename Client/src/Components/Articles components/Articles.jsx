@@ -1,4 +1,4 @@
-import '../Styles/Articles.css';
+import '../../Styles/Articles.css';
 
 //Components import
 import BlogContent from './Blog Content';

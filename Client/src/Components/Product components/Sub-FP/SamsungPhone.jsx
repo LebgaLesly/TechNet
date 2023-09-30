@@ -1,4 +1,4 @@
-import '../../Styles/Home.css';
+import '../../../Styles/Home.css';
 import { FaShoppingBag, FaHeart, FaStar, FaRegStar } from 'react-icons/fa';
 import SamsungPhoneData from '../Product Data.jsx/Samsung Phone Data';
 

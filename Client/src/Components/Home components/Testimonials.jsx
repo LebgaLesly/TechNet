@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import '../Styles/Home.css';
+import '../../Styles/Home.css';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const Testimonials = () => {
@@ -19,7 +19,7 @@ const Testimonials = () => {
             </p>
             <FaQuoteRight className='icon-test1' />
             <div className='cred1'>
-              <img src={require('../Images/Testimonials/1.jpg')} alt="" />
+              <img src={require('../../Images/Testimonials/1.jpg')} alt="" />
               <p><strong>Lebga Lesly</strong></p>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Testimonials = () => {
             </p>
             <FaQuoteRight className='icon-test1' />
             <div className='cred'>
-              <img src={require('../Images/Testimonials/2.jpg')} alt="" />
+              <img src={require('../../Images/Testimonials/2.jpg')} alt="" />
               <p><strong>Tafon Herbert</strong></p>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Testimonials = () => {
             </p>
             <FaQuoteRight className='icon-test1' />
             <div className='cred2'>
-              <img src={require('../Images/Testimonials/3.jpg')} alt="" />
+              <img src={require('../../Images/Testimonials/3.jpg')} alt="" />
               <p> <strong>Bongmibo Cynthia</strong></p>
             </div>
           </div>
