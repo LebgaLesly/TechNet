@@ -37,6 +37,13 @@ header {
   justify-content: space-around;
   margin-top: 30px;
   font-size: 20px;
+}
+
+.nav nav{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
   background-color: inherit;
 }
 
@@ -48,4 +55,23 @@ header {
 nav,
 .link {
     background-color: inherit;
+}
+
+.cart-count{
+  background-color: inherit;
+}
+.count{
+  background-color: red;
+  padding: 0;
+  width: 12px;
+  position: absolute;
+  font-size: 15px;
+  border-radius: 50%;
+  left: 480px;
+  top: 2px;
+  text-align: center;
+}
+
+.count:hover{
+  color: white;
 }

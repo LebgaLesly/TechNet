@@ -1,12 +1,36 @@
+/* eslint-disable no-unused-vars */
 import '../../Styles/Home.css';
 import { FaShoppingBag, FaHeart, FaStar, FaRegStar } from 'react-icons/fa';
-import HisenseTvData from '../Product Data.jsx/Hisense Tv Data';
+import axios from 'axios'
+import { useReducer, useEffect } from 'react';
+import reducer from '../../utils/Reducer';
 
-const HisenseTv = () => {
+
+const SamsungTv = () => {
+
+  const [{loading, error, products}, dispatch] = useReducer(reducer, {
+    products: [],
+    loading: true,
+    error: ''
+  })
+
+  useEffect(() => {
+    const fetchData = async () => {
+      dispatch({type: 'FETCH_REQUEST'})
+      try {
+        const result = await axios.get('/products/hisensetv')
+        dispatch({type:'FETCH_SUCCESS', payload: result.data})
+      } catch (err) {
+        dispatch({type: 'FETCH_FAIL', PAYLOAD: err.message })
+      }
+      
+    }
+    fetchData()
+  }, [])
   return (
     <>
       <div className="product-container">
-        {HisenseTvData.products.map((product) => {
+        {products.map((product) => {
           return (
             <>
               <div className="single-product">
@@ -37,4 +61,4 @@ const HisenseTv = () => {
   );
 };
 
-export default HisenseTv;
+export default SamsungTv;
