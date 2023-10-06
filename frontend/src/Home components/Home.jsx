@@ -1,13 +1,19 @@
-import '../Styles/Home.css';
+import '../../Styles/Home.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { FaSearch } from 'react-icons/fa';
 
 //image import
+<<<<<<<< HEAD:frontend/src/Home components/Home.jsx
 import image1 from '../Images/Mobile Devices/Apple/banner2.jpg';
 import image2 from '../Images/Mobile Devices/Samsung/banner2.jpg';
 
 import image3 from '../Images/TV/Samsung/banner2.jpg';
+========
+import image1 from '../../Images/Mobile Devices/Apple/banner2.jpg';
+import image2 from '../../Images/Mobile Devices/Samsung/banner2.jpg';
+import image3 from '../../Images/TV/Samsung/banner2.jpg';
+>>>>>>>> 65d340241eeb83efa0d4a30f0088c0021b53330c:Client/src/Components/Home components/Home.jsx
 
 //Componets import
 import FeaturedProduct from './Featured Product';

@@ -1,4 +1,4 @@
-import '../Styles/About.css';
+import '../../Styles/About.css';
 
 //Components import
 import AboutContent from './About Content';

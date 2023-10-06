@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import '../Styles/Home.css';
+import '../../Styles/Home.css';
 import { FaFacebookF, FaTwitter, FaInstagram, FaPinterestP, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
@@ -54,11 +54,11 @@ const Footer = () => {
           <h4>Install App</h4>
           <p>From App Store or Google Play</p>
           <div className="row">
-            <img src={require("../Images/App/play.jpg")} alt="" />
-            <img src={require("../Images/App/app.jpg" )}alt="" />
+            <img src={require("../../Images/App/play.jpg")} alt="" />
+            <img src={require("../../Images/App/app.jpg" )}alt="" />
           </div>
           <p>Secured payment Methods</p>
-          <img src={require("../Images/App/pay.png")} alt="" />
+          <img src={require("../../Images/App/pay.png")} alt="" />
         </div>
 
         <div className="copyright">

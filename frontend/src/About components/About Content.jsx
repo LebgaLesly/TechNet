@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import '../Styles/About.css';
+import '../../Styles/About.css';
 
 
 const AboutContent = () => {
     return(
         <>
          <section id="about-head">
-         <img src={require("../Images/About/2.jpg")} alt=""/>
+         <img src={require("../../Images/About/2.jpg")} alt=""/>
          <div>
             <h1>Who Are We?</h1>
             <p>Welcome to Tech Net!
@@ -25,7 +25,7 @@ const AboutContent = () => {
       <section id="about-app">
          <h1>Download Our <a href="">App</a></h1>
          <div class="video">
-            <video  autoplay muted loop src={require("../Images/About/3.mp4")}></video>
+            <video  autoplay muted loop src={require("../../Images/About/3.mp4")}></video>
          </div>
       </section>
         </>

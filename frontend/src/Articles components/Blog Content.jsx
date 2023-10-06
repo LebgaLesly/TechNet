@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import '../Styles/Articles.css';
+import '../../Styles/Articles.css';
 
 
 const BlogContent = () => {
@@ -8,7 +8,7 @@ const BlogContent = () => {
         <section className='blog'>
             <h1 className='feamobile'>Explore the Latest Articles</h1>
             <div className='single-blog'>
-                <img src={require("../Images/Blog/1.webp")} alt="" />
+                <img src={require("../../Images/Blog/1.webp")} alt="" />
                 <div>
                     <a href=""><h1>iPhone 15 delays — here's the latest delivery dates</h1></a>
                     <p className='author'>By Alyse Stanley </p>
@@ -16,7 +16,7 @@ const BlogContent = () => {
                 </div>
             </div>
             <div className='single-blog'>
-                <img src={require("../Images/Blog/2.webp")} alt="" />
+                <img src={require("../../Images/Blog/2.webp")} alt="" />
                 <div>
                     <a href=""><h1>iOS 17 changing privacy settings without permission — how to change them back</h1></a>
                     <p className='author'>By Tom Pritchard</p>
@@ -24,7 +24,7 @@ const BlogContent = () => {
                 </div>
             </div>
             <div className='single-blog'>
-                <img src={require("../Images/Blog/3.webp")} alt="" />
+                <img src={require("../../Images/Blog/3.webp")} alt="" />
                 <div>
                 <a href=""><h1>Samsung Galaxy S24 just tipped for early launch to fight iPhone 15</h1></a>
                     <p className='author'>By Tom Pritchard </p>
@@ -32,7 +32,7 @@ const BlogContent = () => {
                 </div>
             </div>
             <div className='single-blog'>
-                <img src={require("../Images/Blog/4.webp")}alt="" />
+                <img src={require("../../Images/Blog/4.webp")}alt="" />
                 <div>
                 <a href=""><h1>Best iPhone 15 Pro cases in 2023</h1></a>
                     <p className='author'>By TJ Fink</p>
@@ -40,7 +40,7 @@ const BlogContent = () => {
                 </div>
             </div>
             <div className='single-blog'>
-            <img src={require("../Images/Blog/5.webp")} alt="" />
+            <img src={require("../../Images/Blog/5.webp")} alt="" />
             <div>
             <a href=""><h1>iPhone 16 may not get the A17 Pro chip from iPhone 15 Pro — here's why</h1></a>
                 <p className='author'>By Tom Pritchard </p>

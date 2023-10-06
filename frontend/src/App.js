@@ -9,15 +9,15 @@ import {
 // layouts import
 import PageLayout from './Layouts/PageLayout';
 // Components import
-import Home from './Home components/Home';
-import Product from './Product components/Product';
-import Articles from './Articles components/Articles';
-import About from './About components/About';
-import Contact from './Contact components/Contact';
-import ApplePhone from './Product components/Sub-FP/ApplePhone';
-import SamsungPhone from './Product components/Sub-FP/SamsungPhone';
-import HisenseTv from './Product components/Sub-FP/HisenseTv';
-import SamsungTv from './Product components/Sub-FP/SamsungTv';
+import Home from './Components/Home components/Home';
+import Product from './Components/Product components/Product';
+import Articles from './Components/Articles components/Articles';
+import About from './Components/About components/About';
+import Contact from './Components/Contact components/Contact';
+import ApplePhone from './Components/Product components/Sub-FP/ApplePhone';
+import SamsungPhone from './Components/Product components/Sub-FP/SamsungPhone';
+import HisenseTv from './Components/Product components/Sub-FP/HisenseTv';
+import SamsungTv from './Components/Product components/Sub-FP/SamsungTv';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

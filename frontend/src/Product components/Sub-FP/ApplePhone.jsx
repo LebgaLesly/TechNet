@@ -1,7 +1,9 @@
+
 /* eslint-disable no-unused-vars */
 import '../../Styles/Home.css';
 import axios from 'axios'
 import { useReducer, useEffect } from 'react';
+import '../../../Styles/Home.css';
 import { FaShoppingBag, FaHeart, FaStar, FaRegStar } from 'react-icons/fa';
 import reducer from '../../utils/Reducer';
 
