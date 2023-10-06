@@ -1,32 +1,29 @@
 /* eslint-disable no-unused-vars */
-import '../../Styles/Home.css';
+import '../../../Styles/Home.css';
 import { FaShoppingBag, FaHeart, FaStar, FaRegStar } from 'react-icons/fa';
-import axios from 'axios'
+import axios from 'axios';
 import { useReducer, useEffect } from 'react';
-import reducer from '../../utils/Reducer';
+import reducer from '../../../utils/Reducer';
 
-
-const HisenseTv = () => {
-
-  const [{loading, error, products}, dispatch] = useReducer(reducer, {
+const SamsungPhone = () => {
+  const [{ loading, error, products }, dispatch] = useReducer(reducer, {
     products: [],
     loading: true,
-    error: ''
-  })
+    error: '',
+  });
 
   useEffect(() => {
     const fetchData = async () => {
-      dispatch({type: 'FETCH_REQUEST'})
+      dispatch({ type: 'FETCH_REQUEST' });
       try {
-        const result = await axios.get('/products/hisensetv')
-        dispatch({type:'FETCH_SUCCESS', payload: result.data})
+        const result = await axios.get('/products/samsungphone');
+        dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
       } catch (err) {
-        dispatch({type: 'FETCH_FAIL', PAYLOAD: err.message })
+        dispatch({ type: 'FETCH_FAIL', PAYLOAD: err.message });
       }
-      
-    }
-    fetchData()
-  }, [])
+    };
+    fetchData();
+  }, []);
   return (
     <>
       <div className="product-container">
@@ -61,4 +58,4 @@ const HisenseTv = () => {
   );
 };
 
-export default HisenseTv;
+export default SamsungPhone;

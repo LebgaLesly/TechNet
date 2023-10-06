@@ -3,7 +3,7 @@ import { FaRegHeart, FaRegUserCircle, FaOpencart } from 'react-icons/fa';
 import '../Styles/PageLayout.css';
 
 /*   Components */
-import Footer from '../Home components/Footer';
+import Footer from '../Components/Home components/Footer';
 
 const PageLayout = () => {
   return (
