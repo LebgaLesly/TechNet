@@ -19,16 +19,23 @@
   overflow: hidden;
 }
 
+.products .other{
+  width: 85%;
+}
+
 .products .sidebar {
+  width: 15%;
   text-align: center;
-  background-color: #2f2f2f;
+  background-color: #201f1f;
   margin-left: 19px;
-  height: 450px;
+  height: 400px;
   margin-top: 100px;
+  box-shadow: 20px  20px 24px #918787;
 }
 
 .sidebar h1 {
   margin-top: 100px;
+  font-size: 25px;
   margin-bottom: 0px;
   position: relative;
   background-color: inherit;
@@ -41,10 +48,11 @@
   margin-top: 20px;
   background-color: inherit;
   font-size: 17px;
+ 
 }
 
 .sidebar aside a{
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
 }
 
 aside a:hover{

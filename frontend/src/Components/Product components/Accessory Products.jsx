@@ -1,9 +1,31 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-unused-vars */
 import '../../Styles/Home.css';
 import { FaShoppingBag, FaHeart, FaStar, FaRegStar } from 'react-icons/fa';
-import AccessoryProductData from './Product Data.jsx/Accessory Product Data';
+import axios from 'axios';
+import { useReducer, useEffect } from 'react';
+import reducer from '../../utils/Reducer';
 
 const AccessoryProducts = () => {
+  // Fetching products
+  const [{ loading, error, products }, dispatch] = useReducer(reducer, {
+    products: [],
+    loading: true,
+    error: '',
+  });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      dispatch({ type: 'FETCH_REQUEST' });
+      try {
+        const result = await axios.get('/products/accessoryproducts');
+        dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
+      } catch (err) {
+        dispatch({ type: 'FETCH_FAIL', PAYLOAD: err.message });
+      }
+    };
+    fetchData();
+  }, []);
   return (
     <>
       <section>
@@ -11,7 +33,7 @@ const AccessoryProducts = () => {
           <h2 className="feamobile2">Accessory Products</h2>
         </a>
         <div className="product-container">
-        {AccessoryProductData.products.map((product) => {
+        {products.map((product) => {
         return (
               <div className="single-product">
                  <img src={product.image} alt="" />

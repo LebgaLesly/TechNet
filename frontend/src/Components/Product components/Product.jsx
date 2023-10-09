@@ -35,7 +35,7 @@ const Product = () => {
           </aside>
         </div>
 
-        <div>
+        <div className='other'>
           <Outlet />
         </div>
       </div>

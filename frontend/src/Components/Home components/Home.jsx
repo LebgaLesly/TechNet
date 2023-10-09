@@ -28,7 +28,7 @@ const settings = {
   swipeable: true,
   emulateTouch: true,
   autoPlay: true,
-  banner: true,
+  banner: true
 };
 
 const Home = () => {

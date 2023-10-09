@@ -1,12 +1,15 @@
 /* eslint-disable no-unused-vars */
 import '../../../Styles/Home.css';
 import axios from 'axios';
-import { useReducer, useEffect } from 'react';
+import { useReducer, useEffect, useState} from 'react';
 import '../../../Styles/Home.css';
 import { FaShoppingBag, FaHeart, FaStar, FaRegStar } from 'react-icons/fa';
 import reducer from '../../../utils/Reducer';
 
+
+
 const ApplePhone = () => {
+  // Product Fetching
   const [{ loading, error, products }, dispatch] = useReducer(reducer, {
     products: [],
     loading: true,
@@ -20,11 +23,13 @@ const ApplePhone = () => {
         const result = await axios.get('/products/applephone');
         dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
       } catch (err) {
-        dispatch({ type: 'FETCH_FAIL', PAYLOAD: err.message });
+        dispatch({ type: 'FETCH_FAIL', payload: err.message });
       }
     };
     fetchData();
   }, []);
+
+ 
   return (
     <>
       <div className="product-container">
@@ -46,7 +51,10 @@ const ApplePhone = () => {
                     <h3>FCFA {product.price}</h3>
                   </div>
                   <div className="details-icons">
-                    <FaShoppingBag className="bag" />
+                    <FaShoppingBag
+                      className="bag"
+                      
+                    />
                     <FaHeart className="heart" />
                   </div>
                 </div>

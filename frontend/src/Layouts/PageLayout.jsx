@@ -5,7 +5,10 @@ import '../Styles/PageLayout.css';
 /*   Components */
 import Footer from '../Components/Home components/Footer';
 
+
 const PageLayout = () => {
+
+  
   return (
     <>
       <header>
@@ -29,7 +32,7 @@ const PageLayout = () => {
             </NavLink>
             <Link>
               <div className='cart-count'>
-                <FaOpencart className="link" />
+                <FaOpencart className="link"  />
                 <div className="count">2</div>
               </div>
             </Link>
