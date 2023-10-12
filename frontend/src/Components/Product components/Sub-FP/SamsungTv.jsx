@@ -3,7 +3,7 @@ import '../../../Styles/Home.css';
 import { FaShoppingBag, FaHeart, FaStar, FaRegStar } from 'react-icons/fa';
 import axios from 'axios';
 import { useReducer, useEffect } from 'react';
-import reducer from '../../../utils/Reducer';
+import reducer from '../../../Reducers/DataFetchReducer';
 
 const SamsungTv = () => {
   const [{ loading, error, products }, dispatch] = useReducer(reducer, {

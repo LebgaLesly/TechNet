@@ -1,5 +1,5 @@
 import { Outlet, NavLink, Link } from 'react-router-dom';
-import { FaRegHeart, FaRegUserCircle, FaOpencart } from 'react-icons/fa';
+import { FaRegHeart, FaOpencart } from 'react-icons/fa';
 import '../Styles/PageLayout.css';
 
 /*   Components */
@@ -39,9 +39,8 @@ const PageLayout = () => {
             <Link className="link">
               <FaRegHeart className="link" />
             </Link>
-            <Link className="link">
-              <FaRegUserCircle className="link" />
-            </Link>
+            <Link to='login'>Login</Link>
+            <Link to='signup'>Signup</Link>
           </nav>
         </nav>
       </header>

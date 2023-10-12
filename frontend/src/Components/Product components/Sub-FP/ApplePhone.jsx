@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useReducer, useEffect, useState} from 'react';
 import '../../../Styles/Home.css';
 import { FaShoppingBag, FaHeart, FaStar, FaRegStar } from 'react-icons/fa';
-import reducer from '../../../utils/Reducer';
+import reducer from '../../../Reducers/DataFetchReducer';
 
 
 

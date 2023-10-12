@@ -1,4 +1,3 @@
-const port = process.env.PORT  || 5000
 
 //Require Models
 const ApplePhoneModel = require('../models/applePhoneModel')

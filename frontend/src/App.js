@@ -18,10 +18,13 @@ import ApplePhone from './Components/Product components/Sub-FP/ApplePhone';
 import SamsungPhone from './Components/Product components/Sub-FP/SamsungPhone';
 import HisenseTv from './Components/Product components/Sub-FP/HisenseTv';
 import SamsungTv from './Components/Product components/Sub-FP/SamsungTv';
+import Signup from './Components/Authentication/Signup';
+import Login from './Components/Authentication/Login';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<PageLayout />}>
+    <Route>
+      <Route path="/" element={<PageLayout />}>
       <Route index element={<Home />} />
       <Route path="product" element={<Product />}>
         <Route index element={<ApplePhone />} />
@@ -33,6 +36,10 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
     </Route>
+    <Route path="signup" element={<Signup />} />
+    <Route path="login" element={<Login />} />
+    </Route>
+    
   )
 );
 

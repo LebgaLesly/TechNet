@@ -1,8 +1,10 @@
+require('dotenv').config()
+
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors');
-const port = process.env.PORT  || 5000
 const productRoutes = require('./Routes/ProductsRoutes')
+const userRoutes = require('./Routes/UserRoutes')
 
 // init app & middleware
 const app = express();
@@ -10,18 +12,18 @@ app.use(express.json());
 app.use(cors());
 
 //connecting to database
-const uri = 'mongodb+srv://LebgaLesly:lesly112@clusterlesly.ck0bm2i.mongodb.net/?retryWrites=true&w=majority'
-mongoose.connect(uri).then(() => {
+mongoose.connect(process.env.URI).then(() => {
   console.log("Connected to Database")
 })
 
 // routes 
 app.use('/products', productRoutes)
+app.use('/users', userRoutes)
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT , () => {
   console.log(
-    `Server started on PORT: ${port} .`
+    `Server started on PORT: ${process.env.PORT } .`
   )
   })
 
