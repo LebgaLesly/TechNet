@@ -20,7 +20,7 @@ const Product = () => {
             <h1 className="feamobile">Catergories</h1>
           </a>
           <aside>
-            <Link index className="Link">
+            <Link to="/" className="Link">
               Apple Phone
             </Link>
             <Link to="samsungphone" className="Link">

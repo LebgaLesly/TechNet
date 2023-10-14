@@ -1,21 +1,19 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useLogin } from '../../Hooks/useLogin';
 
 const Login = () => {
-  const [username, setUsername] = useState('');
+  const [name, setName] = useState('');
   const [password, setPassword] = useState('');
+  const {login, error, isLoading} = useLogin()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(username, password);
+    await login(name, password)
   };
 
   return (
     <>
-      <nav className='auth-nav'>
-        <Link className="logo1">TECH NET</Link>
-      </nav>
       <div className="bg">
         <div className="form-container">
           <form className="register-form" onSubmit={handleSubmit}>
@@ -23,8 +21,8 @@ const Login = () => {
 
             <input
               type="text"
-              onChange={(e) => setUsername(e.target.value)}
-              value={username}
+              onChange={(e) => setName(e.target.value)}
+              value={name}
               className="form-field"
               placeholder="Username"
             />
@@ -36,7 +34,8 @@ const Login = () => {
               className="form-field"
             />
 
-            <button>Log In</button>
+            <button disabled={isLoading}>Log In</button>
+            {error && <div className='error'>{error}</div>}
           </form>
         </div>
       </div>

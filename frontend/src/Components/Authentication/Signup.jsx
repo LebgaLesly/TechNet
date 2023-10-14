@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../../Styles/Authentication.css';
-import { Link } from 'react-router-dom';
+
 import { useSignup } from '../../Hooks/useSignup';
 
 const Signup = () => {
@@ -16,10 +16,7 @@ const Signup = () => {
   };
 
   return (
-    <>
-      <nav className='auth-nav'>
-        <Link className="logo1">TECH NET</Link>
-      </nav>
+    <>   
       <div className="bg">
         <div className="form-container">
           <form className="register-form" onSubmit={handleSubmit}>
@@ -31,6 +28,7 @@ const Signup = () => {
               onChange={(e) => setName(e.target.value)}
               value={name}
               class="form-field"
+              name="name"
             />
             <input
               type="email"
@@ -38,6 +36,7 @@ const Signup = () => {
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               class="form-field"
+              name='email'
             />
             <input
               type="password"
@@ -45,6 +44,7 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)}
               value={password}
               class="form-field"
+              name='password'
             />
            
             <button disabled={isLoading}>Register</button>
