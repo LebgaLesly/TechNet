@@ -1,6 +1,4 @@
-/* eslint-disable react/style-prop-object */
-/* eslint-disable jsx-a11y/iframe-has-title */
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import '../../Styles/Contact.css';
 import { FaLocationArrow, FaEnvelope, FaPhoneAlt, FaRegClock } from 'react-icons/fa';
 
