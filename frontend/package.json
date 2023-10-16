@@ -1,6 +1,6 @@
 {
   "name": "technet",
-  "proxy": "http://localhost:5000",
+  "proxy": "https://tech-net-mern.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

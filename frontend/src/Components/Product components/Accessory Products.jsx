@@ -47,7 +47,7 @@ const AccessoryProducts = () => {
                       <FaStar />
                       <FaRegStar />
                     </div>
-                    <h3>{product.price}</h3>
+                    <h3>FCFA {product.price}</h3>
                   </div>
                   <div className="details-icons">
                     <FaShoppingBag className="bag" />
