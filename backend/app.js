@@ -9,7 +9,9 @@ const userRoutes = require('./Routes/UserRoutes')
 // init app & middleware
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://tech-net-f.onrender.com/']
+}));
 
 //connecting to database
 mongoose.connect(process.env.URI).then(() => {
