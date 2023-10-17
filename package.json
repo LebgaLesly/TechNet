@@ -1,8 +1,7 @@
 {
   "scripts": {
-    "start": "node backend/app.js",
-    "dev": " nodemon app.js",
-    "build": "npm i"
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm build",
+    "start": "node backend/app.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
