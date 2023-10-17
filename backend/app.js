@@ -10,7 +10,7 @@ const userRoutes = require('./Routes/UserRoutes')
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://tech-net-f.onrender.com/']
+  origin: ['http://localhost:3000']
 }));
 
 //connecting to database
